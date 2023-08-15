@@ -1,0 +1,13 @@
+package com.jflores.springboot.error.app.errors;
+
+public class UsuarioNoEncontradoException extends RuntimeException {
+
+	
+	public UsuarioNoEncontradoException(String id) {
+		super("Usuario con ID: ".concat(id).concat(" no existe en el sitema"));
+	
+	}
+
+	private static final long serialVersionUID = 1L;
+
+}
